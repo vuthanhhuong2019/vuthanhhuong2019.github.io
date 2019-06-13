@@ -92,25 +92,6 @@ function minNumber(array){
 }
 minNumber([2,1,3]);
 
-
-Một số phương thức xử lý mảng hay dùng
-● Thêm phần tử vào cuối mảng: .push()
-Ví dụ: let arr = [1, 2, 3]; arr.push(7) sẽ làm mảng arr thay đổi thành [1, 2, 3, 7]
-● Thêm phần tử vào đầu mảng: .unshift()
-● Cắt bỏ phần tử ở đầu mảng: .shift()
-Ví dụ: let arr = [1, 2, 3]; arr.shift() sẽ làm mảng arr thay đổi thành [2, 3]
-● Cắt bỏ phần tử ở cuối mảng: .pop()
-
-Sắp xếp mảng
-● Dùng hàm .sort(), mặc định là sắp xếp chuỗi theo thứ tự bảng chữ cái. Ví dụ
-let arr1 = ['Banana', 'Apple', 'Orange']; arr1.sort() sẽ làm arr1 thay đổi thành ['Apple', 'Banana', 'Orange']
-let arr2 = [2, 1, 4, 13]; arr2.sort() sẽ làm arr2 thay đổi thành [1, 13, 2, 4]
-● Sắp xếp mảng số:
-let arr3 = [2, 1, 4, 13]; arr3.sort(function(a, b) { return a - b }); => Sắp xếp tăng dần
-let arr4 = [2, 1, 4, 13]; arr4.sort(function(a, b) { return b - a }); => Sắp xếp giảm dần
-● Đảo ngược mảng dùng hàm .reverse(), ví dụ:
-let arr5 = ['Banana', 'Apple', 'Orange']; arr5.reverse() sẽ làm arr5 thay đổi thành ['Orange', 'Apple', 'Banana']
-
 /*● Viết hàm tìm ra số lớn thứ nhì trong mảng các số. Ví dụ:
 max2Numbers([2, 1, 3, 4]) => Kết quả trả về là 3*/
 
