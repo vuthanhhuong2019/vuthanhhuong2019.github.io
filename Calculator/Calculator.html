@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiện ích máy tính online</title>
+    <style>
+     
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="box-calculation" value="">
+        <input type="text" class="box-result" value="">
+        <div class="box-button">
+            <button class="refresh">CE</button>
+            <button class="del">Del</button>
+            <button class="plus operation">+</button>
+            <button class="minus operation">-</button>
+            <button class="times operation">*</button>
+            <button class="divide operation">/</button>
+            <button class="number">9</button>
+            <button class="number">8</button>
+            <button class="number">7</button>
+            <button class="number">6</button>
+            <button class="number">5</button>
+            <button class="number">4</button>
+            <button class="number">3</button>
+            <button class="number">2</button>
+            <button class="number">1</button>
+            <button class="number">0</button>
+            <button class="dot">.</button>
+            <button class="equal">=</button>
+        </div>
+    </div>    
+    
+    <script>
+         $(document).ready(function() {
+    $('.box-calculation').attr('disabled', 'true'); // Vô hiệu hoá ô phép tính
+    $('.box-result').attr('disabled', 'true'); // Vô hiệu hoá ô kết quả
+    $('.box-button button.times').attr('disabled', 'true'); // Vô hiệu hoá nút nhân
+    $('.box-button button.divide').attr('disabled', 'true'); // Vô hiệu hoá nút chia
+    $('.box-button button.equal').attr('disabled', 'true'); // Vô hiệu hoá nút bằng
+});
+$('.box-button button.number').on('click', function() {
+    $char = $(this).html(); // Lấy số vừa click
+    $value_calculation = $('.box-calculation').val(); // Lấy chuỗi giá trị trong ô phép tính
+    $('.box-calculation').val($value_calculation + $char); // Thêm số vừa click vào sau chuỗi giá trị trong ô phép tính
+    $('.box-button button.operation').removeAttr('disabled'); // Gỡ bỏ vô hiệu hoá các nút phép toán
+    $('.box-button button.equal').removeAttr('disabled'); // Gỡ bỏ vô hiệu hoá nút bằng
+});
+    </script>
+</body>
+</html

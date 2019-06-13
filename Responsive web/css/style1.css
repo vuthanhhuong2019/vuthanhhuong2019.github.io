@@ -64,3 +64,20 @@ h1 {
       } 
     }
 
+  .img-outer-wrapper:hover .img-content {
+    height: 20%; }
+
+    .img-content {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  transition: 1s;
+  overflow: hidden;
+  display: block;
+  background-color: lightgreen;
+  width: 100%;
+  height: 0;
+  /*height: 20%;*/
+  color: white;
+  /*padding-top: 5%;*/
+  font-size: 2rem; }
